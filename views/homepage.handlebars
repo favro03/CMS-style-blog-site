@@ -1,10 +1,10 @@
-<ol class="post-list">
+<ul class="post-list">
     {{#each posts as |post|}}
   <li>
     <article class="post">
       <div class="title">
         <a href=>{{post.title}}</a>
-        <a> {{post.post_content}}</a>
+        <p> {{post.post_content}}</p>
       </div>
       <div class="meta">
         Created by {{post.user.username}} on
@@ -15,5 +15,5 @@
     </article>
   </li>
   {{/each}}
-</ol>
+</ul>
 

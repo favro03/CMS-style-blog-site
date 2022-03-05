@@ -12,11 +12,6 @@ Post.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-//create assication between votes and users
-User.hasMany(Post, {
-  foreignKey: 'user_id'
-});
-
 Comment.belongsTo(User, {
   foreignKey: 'user_id'
 });
